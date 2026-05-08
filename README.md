@@ -13,6 +13,8 @@ cd tickets-api
 APP_URL=ссылка на 8000 порт
 ```
 
+Откройте `composer.json` и удалите часть `\"php artisan pail --timeout=0\"` из скрипта `dev`
+
 Инициализируйте и проверьте запуск:
 
 ```bash
