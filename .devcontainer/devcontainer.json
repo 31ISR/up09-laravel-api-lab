@@ -1,0 +1,20 @@
+{
+    "name": "Laravel",
+    "image": "mcr.microsoft.com/devcontainers/php:8.3",
+    "features": {
+        "ghcr.io/devcontainers/features/node:1": {}
+    },
+    "postCreateCommand": "composer global require laravel/installer && echo 'export PATH=\"$PATH:$HOME/.composer/vendor/bin\"' >> ~/.bashrc",
+    "remoteEnv": {
+        "PATH": "${containerEnv:PATH}:/root/c.omposer/vendor/bin"
+    },
+    "forwardPorts": [8000, 5173],
+    "portsAttributes": {
+        "8000": {
+            "label": "Laravel"
+        },
+        "5173": {
+            "label": "Vite"
+        }
+    }
+}
