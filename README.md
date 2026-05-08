@@ -732,6 +732,8 @@ Authorization: Bearer <токен>
 | POST   | /api/tickets/{ticket}/comments           | Да          |
 | DELETE | /api/tickets/{ticket}/comments/{comment} | Да          |
 
+Рядом с папкой tickets-api должен быть yaml файл из Insomnia
+
 # Как сдавать
 
 - Создайте форк репозитория в вашей организации с названием-этого-репозитория-вашафамилия
